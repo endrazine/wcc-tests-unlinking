@@ -1,5 +1,5 @@
 CC := gcc
-CFLAGS := -W -Wall -pie -fPIE -fPIC -g3 -ggdb
+CFLAGS := -W -Wall -pie -fPIE -fPIC -g3 -ggdb -std=gnu17
 LDFLAGS := $(shell ldd /usr/sbin/nginx|grep .so|awk '{print $$3}'|grep .|xargs)
 
 all::

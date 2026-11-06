@@ -1,6 +1,6 @@
 CC := gcc
 WCC = wcc
-CFLAGS := -W -Wall -Wextra
+CFLAGS := -W -Wall -Wextra -Wno-int-conversion
 
 all::
 	$(CC) $(CFLAGS) small.c -o small

@@ -9,7 +9,7 @@
 #include <limits.h>
 #include <errno.h>
 
-extern u_char *lngx_hex_dump(u_char *dst, u_char *src, size_t len);
+extern u_char *ngx_hex_dump(u_char *dst, u_char *src, size_t len);
 
 void __ctype_init (void){}
 
